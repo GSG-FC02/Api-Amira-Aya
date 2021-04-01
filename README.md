@@ -1,7 +1,7 @@
 # Api-Amira-Aya
 
 ## Team Members:
-* Amira Alnajar
+* Amira Alnajjar
 * Aya Asqoul
 
 
