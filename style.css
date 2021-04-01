@@ -1,40 +1,122 @@
-* {
-    padding: 0;
+body {
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-    background-color: #517bb5;
-  }
-  
-  /* header */
-  .list-header {
-    background-image: url(./images/header.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  
-    height: 500px;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.movie {
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
     width: 100%;
-  }
-  
-  .icon_search {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section .imageContainer {
+    flex: 0 0 auto;
+}
+
+.content {
+    display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+
+.content-display {
+    display: block;
+}
+
+
+.content-display {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content div {
+    margin: 10px;
+}
+
+
+#content-close {
+    cursor: pointer;
     position: absolute;
-    left: 72%;
-    top: 52%;
-    margin: auto;
-    z-index: 4;
-    background-color: white;
-  }
-  /* search */
-  .search {
-    position: absolute;
-    width: 65%;
-    height: 50px;
-    left: 15%;
-    top: 50%;
-    margin: auto;
-    background: #ffffff;
-    border-radius: 100px;
-    border: 2px solid #ffffff;
-    padding-left: 10px;
-  }
+    top: 20px;
+    padding: 10px;
+    /* width: 35px;; */
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    left: 20px;
+}
+
+
+.imageContainer {
+    transition: 250ms all;
+    width: 300px;
+}
+
+
+.imageContainer:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imageContainer {
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
